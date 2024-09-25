@@ -30,7 +30,7 @@ header a {
 }
 
 .hero {
-  background: url("../images/mainCover.svg") no-repeat center center;
+  background: url("images/mainCover.svg") no-repeat center center;
   background-size: cover;
   position: relative;
   display: flex;
