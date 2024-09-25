@@ -13,11 +13,6 @@ body {
 
 header {
   background-color: #f7eac1;
-  /* padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #ddd; */
 }
 
 header a {
@@ -282,16 +277,7 @@ header a {
 .swiper-container {
   margin-top: 32px;
   margin-bottom: 32px;
-  width: 90%; /* Set container width less than 100% to allow space for partial slides */
-  overflow: visible; /* Allows overflow to be visible so parts of slides are shown */
 }
-
-.swiper-slide {
-  width: calc((100% / 3) - 10px); /* Adjust the slide width based on the container size and spaceBetween */
-  box-sizing: border-box;
-}
-
-
 footer {
   background-color: #597d77;
   text-align: center;
@@ -317,6 +303,9 @@ footer span {
 
 
 @media (max-width: 576px) {
+  /* body{
+    overflow: hidden;
+  } */
   .nav-link {
     text-align: center !important;
   }
@@ -393,6 +382,12 @@ footer span {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .map{
+    display: none;
+  }
+  .swiper-slide img{
+    margin-left: 27px;
   }
 
   .tayeb-difference h2 {
