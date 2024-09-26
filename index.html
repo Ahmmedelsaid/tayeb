@@ -90,8 +90,7 @@
                 <img class="w-100" src="images/halal_nuggets-59_1-removebg-preview.png" alt="">
             </div>
         </div>
-        <img class="position-absolute halal" width="400"
-            src="images/halal logo.svg" alt="halal">
+        <img class="position-absolute halal" width="400" src="images/halal logo.svg" alt="halal">
     </div>
 
     <div class="container tayeb-difference">
@@ -99,7 +98,7 @@
         <div class="row">
             <div class="col-md-3 col-sm-12">
                 <div class="icon">
-                    <img src="images/_x34_8x48_Icons.svg" alt="">
+                    <img src="images/halalIcon.svg" alt="">
                 </div>
                 <h4> 100% Halal Certified</h4>
                 <p>Our chicken is certified 100% halal, aligning with humane, ethical practices and strict halal
@@ -107,7 +106,7 @@
             </div>
             <div class="col-md-3 col-sm-12">
                 <div class="icon">
-                    <img src="images/_x34_8x48_Icons (1).svg" alt="">
+                    <img src="images/checkIcon.svg" alt="">
                 </div>
                 <h4>All Natural</h4>
                 <p>Tayeb Chicken is made from only natural ingredients, with no artificial additives—just pure,
@@ -115,7 +114,7 @@
             </div>
             <div class="col-md-3 col-sm-12">
                 <div class="icon">
-                    <img src="images/_x34_8x48_Icons (3).svg" alt="">
+                    <img src="images/hormoneIcon.svg" alt="">
                 </div>
                 <h4>No Hormones</h4>
                 <p>Raised without hormones or steroids, our chicken is healthy and nutritious, exactly as nature
@@ -123,7 +122,7 @@
             </div>
             <div class="col-md-3 col-sm-12">
                 <div class="icon">
-                    <img src="images/_x34_8x48_Icons (2).svg" alt="">
+                    <img src="images/chickenIcon.svg" alt="">
                 </div>
                 <h4>Grown in the USA</h4>
                 <p>Proudly raised on U.S. farms, our chickens meet the highest standards of local farming and
@@ -162,25 +161,25 @@
     </section>
 
     <!-- slider section -->
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img src="images/halal_nuggets-39-edit.svg" alt="">
-                </div>
-                <div class="swiper-slide">
-                    <img src="images/iStock-1333635857.svg" alt="">
-                </div>
-                <div class="swiper-slide">
-                    <img src="images/iStock-1407501909.svg" alt="">
-                </div>
-                <div class="swiper-slide">
-                    <img src="images/iStock-1421257697.svg" alt="">
-                </div>
-                <div class="swiper-slide">
-                    <img src="images/halal_nuggets-45-edit.svg" alt="">
-                </div>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="images/halal_nuggets-39-edit.svg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/iStock-1333635857.svg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/iStock-1407501909.svg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/iStock-1421257697.svg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/halal_nuggets-45-edit.svg" alt="">
             </div>
         </div>
+    </div>
 
     <!-- Footer Section -->
     <footer>
@@ -197,9 +196,9 @@
                     <p>CONTACT US</p>
                 </div>
                 <div class="col-md-3 col-sm-12 mt-5" style="cursor: pointer;">
-                    <img src="images/social icons.svg" alt="">
-                    <img src="images/social icons (1).svg" alt="">
-                    <img src="images/social icons (2).svg" alt="">
+                    <img src="images/facebook.svg" alt="">
+                    <img src="images/twitter.svg" alt="">
+                    <img src="images/instagram.svg" alt="">
                 </div>
                 <div class="col-md-3 col-sm-12 mt-5">
                     <img src="images/tayebLogo.svg" alt="">
@@ -212,20 +211,23 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
         var swiper = new Swiper('.swiper-container', {
-            loop: true,
-            autoplay: {
-                delay: 3000,
+            slidesPerView: 1, // For small screens
+            spaceBetween: 0,  // Avoid gaps between slides that can overflow
+            autoplay:{
+                delay:2000
             },
+            
             breakpoints: {
-                320: {
-                    slidesPerView: 1,
-                    spaceBetween: 10
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
                 },
-                640:{
-                    slidesPerView:3.2,
-                    spaceBetween : 10
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
                 }
-            }
+            },
+            loop: true, // Ensures the swiper loops without excess space
         });
     </script>
 </body>

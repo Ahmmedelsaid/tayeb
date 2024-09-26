@@ -303,9 +303,24 @@ footer span {
 
 
 @media (max-width: 576px) {
-  /* body{
+  html, body {
+    overflow-x: hidden;
+  }
+
+  .swiper-container {
+    width: 100%;
     overflow: hidden;
-  } */
+    max-width: 100vw; 
+  }
+
+  .swiper-wrapper {
+    display: flex;
+  }
+
+  .swiper-slide {
+    flex: 1 0 auto; 
+    width: 100%;   
+  }
   .nav-link {
     text-align: center !important;
   }
@@ -342,9 +357,6 @@ footer span {
   .naget {
     margin-top: -80px;
   }
-  /* .tayeb-way h4{
-    font-size: 20px;
-  } */
   .tayeb-way p {
     text-align: center;
     margin-left: 20px;
