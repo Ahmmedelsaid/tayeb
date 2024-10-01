@@ -433,6 +433,7 @@ footer span {
   .farm-text button {
     font-size: 14px;
     line-height: 19.1px;
+    margin-left: 10px;
   }
   .naget {
     margin-top: -80px;
@@ -470,7 +471,7 @@ footer span {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    top: -110px;
+    top: -122px;
     z-index: 3;
   }
   .cutting img {
