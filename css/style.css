@@ -11,11 +11,17 @@ body {
   font-family: Arial, sans-serif;
   overflow-x: hidden;
 }
+.first-section{
+  height: 100vh !important;
+}
+.logo{
+  width: 10% !important;
+}
 
 header {
   background-color: #f7eac1;
   width: 100%;
-  height: 111px;
+  height: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -59,7 +65,7 @@ header a {
   white-space: nowrap;
 }
 
-.hero {
+/* .hero {
   background: url("../images/mainCover.svg") no-repeat center center;
   background-size: cover;
   position: relative;
@@ -70,6 +76,26 @@ header a {
   text-align: center;
   color: white;
   margin-bottom: 150px;
+} */
+.hero {
+  margin-bottom: 10px;
+}
+.mainCover {
+  object-fit: cover;
+  width: 100%;
+  height: 75%;
+}
+.products {
+  top: 70%;
+  width: 20%;
+}
+.title {
+  font-family: Nunito;
+  font-size: 36px !important;
+  line-height: 50px !important;
+  text-align: center;
+  color: #ffffff;
+  top: 25%;
 }
 .hero h1 {
   font-family: Nunito;
@@ -88,18 +114,21 @@ header a {
   transform: translateX(-50%);
   z-index: 1;
 }
+.farm-image {
+  height: 50%;
+}
 .farm-text h2 {
   font-family: Nunito;
-  font-size: 32px;
+  font-size: 20px !important;
   font-weight: 800;
-  line-height: 43.65px;
+  line-height: 33.65px;
   text-align: left;
   white-space: nowrap;
-  margin-top: 30px;
+  margin-top: -10px;
 }
 .farm-text p {
   font-family: Nunito;
-  font-size: 20px;
+  font-size: 16px !important;
   font-weight: 300;
   line-height: 30px;
   text-align: left;
@@ -114,20 +143,20 @@ header a {
   text-align: left;
 }
 .farm-text button {
-  width: 356px;
-  height: 68px;
+  width: 256px;
+  height: 38px;
   gap: 0px;
   opacity: 0px;
   font-family: Nunito;
   font-size: 16px;
   font-weight: 800;
-  line-height: 21.82px;
+  line-height: 17.82px;
   letter-spacing: 0.05em;
   text-align: center;
   color: #ffff;
   background-color: #bd202f;
   border-color: #bd202f;
-  margin-top: 40px;
+  margin-top: -3%;
 }
 .way-section {
   margin-top: 150px;
@@ -347,6 +376,9 @@ footer span {
   .small-space {
     display: none;
   }
+  .navbar-icons {
+    display: none;
+  }
 }
 
 @media (max-width: 767px) {
@@ -366,6 +398,7 @@ footer span {
   header {
     height: auto;
     padding: 10px 0;
+    z-index: 10 !important;
   }
   header a {
     font-size: 28px !important;
@@ -400,9 +433,16 @@ footer span {
     width: 113px;
     height: auto;
   }
+
   .hero h1 {
     font-size: 36px;
     line-height: 40px;
+  }
+  .title {
+    z-index: 1 !important;
+  }
+  .products {
+    z-index: 1 !important;
   }
   .farm-img {
     display: flex;
@@ -415,7 +455,52 @@ footer span {
     height: 100%;
     top: 48%;
   }
+  .farm-image {
+    height: 50%;
+    margin-top: -10%;
+  }
   .farm-text h2 {
+    font-family: Nunito;
+    font-size: 20px !important;
+    font-weight: 800;
+    line-height: 33.65px;
+    text-align: left;
+    white-space: nowrap;
+    margin-top: -45%;
+  }
+  .farm-text p {
+    font-family: Nunito;
+    font-size: 16px !important;
+    font-weight: 300;
+    line-height: 30px;
+    text-align: left;
+    color: #26403e;
+  }
+  .farm-text span {
+    color: #26403e;
+    font-family: Nunito;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 30px;
+    text-align: left;
+  }
+  .farm-text button {
+    width: 256px;
+    height: 38px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Nunito;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 17.82px;
+    letter-spacing: 0.05em;
+    text-align: center;
+    color: #ffff;
+    background-color: #bd202f;
+    border-color: #bd202f;
+    margin: auto;
+  }
+  /* .farm-text h2 {
     font-family: Nunito;
     font-size: 24px;
     font-weight: 800;
@@ -434,7 +519,7 @@ footer span {
     font-size: 14px;
     line-height: 19.1px;
     margin-left: 10px;
-  }
+  } */
   .naget {
     margin-top: -80px;
   }
@@ -571,7 +656,7 @@ footer span {
     text-align: center;
     margin-bottom: 24px;
   }
-  .social{
+  .social {
     margin-top: 48px !important;
     margin-bottom: 64px !important;
   }
@@ -581,7 +666,38 @@ footer span {
     font-weight: 600;
     line-height: 13.64px;
     letter-spacing: 0.05em;
-    text-align: center;  
+    text-align: center;
     margin-top: 84px;
+  }
+  .navbar-icons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
+    margin-bottom: 200px;
+  }
+  .navbar-icons img {
+    max-width: 30px;
+  }
+  /* .hero {
+    margin-bottom: -100px;
+  } */
+  .first-section{
+    height: auto !important;
+  }
+  .products {
+    top: 90%;
+    width: 40%;
+  }
+  .title {
+    font-family: Nunito;
+    font-size: 24px !important;
+    line-height: 30px !important;
+    text-align: center;
+    color: #ffffff;
+    top: 30%;
+    white-space: nowrap;
+  }
+  .logo{
+    width: 30% !important;
   }
 }
