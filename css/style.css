@@ -11,17 +11,14 @@ body {
   font-family: Arial, sans-serif;
   overflow-x: hidden;
 }
-.first-section{
-  height: 100vh !important;
+.tayeb-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
-.logo{
-  width: 10% !important;
-}
-
 header {
   background-color: #f7eac1;
   width: 100%;
-  height: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -80,26 +77,6 @@ header a {
   height: 540px;
   max-height: 540px;
 }
-/* .hero {
-  margin-bottom: 10px;
-}
-.mainCover {
-  object-fit: cover;
-  width: 100%;
-  height: 75%;
-}
-.products {
-  top: 70%;
-  width: 20%;
-}
-.title {
-  font-family: Nunito;
-  font-size: 36px !important;
-  line-height: 50px !important;
-  text-align: center;
-  color: #ffffff;
-  top: 25%;
-} */
 .hero h1 {
   font-family: Nunito;
   font-size: 72px;
@@ -108,18 +85,9 @@ header a {
   text-align: center;
   color: #ffffff;
 }
-
-/* .product-image {
-  position: absolute;
-  bottom: 0;
-  top: 57%;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1;
-} */
-/* .farm-image {
-  height: 50%;
-} */
+.product-image {
+  width: 60%;
+}
 .farm-text h2 {
   font-family: Nunito;
   font-size: 32px !important;
@@ -127,7 +95,8 @@ header a {
   line-height: 43.65px;
   text-align: left;
   white-space: nowrap;
-  margin-top: 10px;
+  margin-top: 20px;
+  color: #26403e;
 }
 .farm-text p {
   font-family: Nunito;
@@ -136,6 +105,7 @@ header a {
   line-height: 30px;
   text-align: left;
   color: #26403e;
+  margin-top: 25px;
 }
 .farm-text span {
   color: #26403e;
@@ -159,14 +129,13 @@ header a {
   color: #ffff;
   background-color: #bd202f;
   border-color: #bd202f;
-  margin-top: 10%;
+  margin-top: 6%;
 }
 .way-section {
-  margin-top: 150px;
+  margin-top: 10%;
 }
 .halal-nuggets {
-  position: relative;
-  bottom: 120px;
+  margin-top: -20%;
 }
 
 .tayeb-way h4 {
@@ -187,7 +156,7 @@ header a {
   line-height: 35px;
   letter-spacing: -0.01em;
   text-align: left;
-  color: #668f85;
+  color: #26403e;
 }
 .tayeb-way span {
   font-family: Nunito;
@@ -196,7 +165,7 @@ header a {
   line-height: 35px;
   letter-spacing: -0.01em;
   text-align: left;
-  color: #668f85;
+  color: #26403e;
 }
 .learn-more {
   font-family: Nunito;
@@ -384,15 +353,6 @@ footer span {
   }
 }
 
-@media (max-width: 767px) {
-  .space-after-lg {
-    display: none;
-  }
-  .small-space {
-    display: block;
-  }
-}
-
 @media (max-width: 576px) {
   html,
   body {
@@ -404,98 +364,92 @@ footer span {
     z-index: 10 !important;
   }
   header a {
+    font-family: Reddit Sans Condensed !important;
     font-size: 28px !important;
-    line-height: 36.37px;
+    font-weight: 800 !important;
+    line-height: 36.37px !important;
+    text-align: center !important;
   }
-
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .navbar-toggler {
-    margin-bottom: 10px;
-  }
-
   .navbar-nav {
     flex-direction: column;
     width: 100%;
   }
-
   .nav-item {
     margin: 10px 0;
     width: 100%;
     text-align: center;
-  }
-
-  .nav-link {
-    padding: 10px 0;
   }
   .navbar-container img {
     margin-right: 0px;
     width: 113px;
     height: auto;
   }
-
+  .navbar-icons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
+    margin-bottom: 200px;
+  }
+  .navbar-icons img {
+    max-width: 30px;
+  }
+  .hero {
+    background: url("../images/hero-mobile.svg") no-repeat center top;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    margin-bottom: 20%;
+  }
   .hero h1 {
-    font-size: 36px;
-    line-height: 40px;
+    font-size: 36px !important;
+    line-height: 40px !important;
   }
-  .title {
-    z-index: 1 !important;
-  }
-  .products {
-    z-index: 1 !important;
+  .product-image {
+    width: 100%;
+    margin-top: -6%;
   }
   .farm-img {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -50px !important;
-  }
-  .product-image {
-    width: 100%;
-    height: 100%;
-    top: 48%;
+    margin-top: -10% !important;
   }
   .farm-image {
-    height: 50%;
-    margin-top: -10%;
+    width: 80%;
+    height: 80%;
   }
   .farm-text h2 {
-    font-family: Nunito;
-    font-size: 20px !important;
-    font-weight: 800;
-    line-height: 33.65px;
-    text-align: left;
-    white-space: nowrap;
-    margin-top: -45%;
+    font-size: 24px !important;
+    line-height: 32.74px !important;
+    text-align: center;
+    margin-top: -19%;
   }
   .farm-text p {
     font-family: Nunito;
     font-size: 16px !important;
     font-weight: 300;
-    line-height: 30px;
-    text-align: left;
+    line-height: 24px;
+    text-align: center;
     color: #26403e;
+    width: 100%;
   }
   .farm-text span {
     color: #26403e;
     font-family: Nunito;
-    font-size: 20px;
-    font-weight: 800;
-    line-height: 30px;
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 24px;
     text-align: left;
   }
   .farm-text button {
-    width: 256px;
-    height: 38px;
-    gap: 0px;
-    opacity: 0px;
     font-family: Nunito;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 800;
-    line-height: 17.82px;
+    line-height: 19.1px;
     letter-spacing: 0.05em;
     text-align: center;
     color: #ffff;
@@ -503,51 +457,38 @@ footer span {
     border-color: #bd202f;
     margin: auto;
   }
-  /* .farm-text h2 {
-    font-family: Nunito;
-    font-size: 24px;
-    font-weight: 800;
-    line-height: 32.74px;
-    text-align: center;
-    margin-top: -40px !important;
-  }
-  .farm-text span,
-  .farm-text p {
-    font-family: Nunito;
-    font-size: 16px;
-    line-height: 24px;
-    text-align: center;
-  }
-  .farm-text button {
-    font-size: 14px;
-    line-height: 19.1px;
-    margin-left: 10px;
-  } */
   .naget {
-    margin-top: -80px;
+    margin-top: -35%;
   }
   .tayeb-way h4 {
     font-family: Nunito;
-    font-size: 36px;
-    font-weight: 800;
-    line-height: 49.1px;
+    font-size: 36px !important;
+    line-height: 49.1px !important;
     text-align: center;
+    color: #26403e;
   }
   .tayeb-way p {
-    width: 90% !important;
-    text-align: left;
+    /* width: 5950 !important; */
     font-size: 16px;
-    margin-left: 28px;
+    font-weight: 300;
     line-height: 24px;
+    letter-spacing: -0.01em;
+    margin-left: 4%;
   }
   .tayeb-way span {
     font-size: 16px;
+    font-weight: 800;
     line-height: 24px;
+    letter-spacing: -0.01em;
+  }
+  .halal-nuggets{
+    margin-top: -32%;
+  
   }
   .halal {
     left: 50%;
+    top: 58%;
     transform: translate(-50%);
-    top: 670px;
     width: 100%;
   }
   .nationwide {
@@ -623,9 +564,9 @@ footer span {
   .image-container img:nth-child(3) {
     display: block !important;
   }
-  .tayeb-difference {
+  /* .tayeb-difference {
     margin-top: -70px;
-  }
+  } */
 
   .tayeb-difference h2 {
     font-size: 42px;
@@ -672,26 +613,8 @@ footer span {
     text-align: center;
     margin-top: 84px;
   }
-  .navbar-icons {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 80px;
-    margin-bottom: 200px;
-  }
-  .navbar-icons img {
-    max-width: 30px;
-  }
-  /* .hero {
-    margin-bottom: -100px;
-  } */
-  .first-section{
-    height: auto !important;
-  }
-  .products {
-    top: 90%;
-    width: 40%;
-  }
-  .title {
+
+  /* .title {
     font-family: Nunito;
     font-size: 24px !important;
     line-height: 30px !important;
@@ -699,8 +622,23 @@ footer span {
     color: #ffffff;
     top: 30%;
     white-space: nowrap;
+  } */
+}
+
+@media (max-width: 768px) {
+  .tayeb-container {
+    padding: 0 10px;
   }
-  .logo{
-    width: 30% !important;
+  .space-after-lg {
+    display: none;
+  }
+  .small-space {
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  .tayeb-container {
+    padding: 0 5px;
   }
 }
