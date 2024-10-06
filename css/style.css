@@ -10,14 +10,16 @@
 body {
   font-family: Arial, sans-serif;
   overflow-x: hidden;
+  background-color: #f4f4f4 !important;
 }
 .tayeb-container {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 15px;
+  /* padding: 0 15px; */
+  background-color: #ffffff;
 }
 header {
-  background-color: #f7eac1;
+  background-color: #fff2da;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -146,7 +148,6 @@ header a {
   text-align: center;
   color: #26403e;
   white-space: nowrap;
-  z-index: 10;
 }
 .tayeb-way p {
   width: 550px !important;
@@ -239,24 +240,24 @@ header a {
   text-align: center;
   margin-top: 330px;
   z-index: 1;
-  height: 900px;
+  height: 975px;
 }
 .cutting {
-  position: relative;
+  /* position: relative;
   left: 50%;
   transform: translateX(-50%);
-  top: -330px;
-  z-index: 3;
+  z-index: 3; */
+  top: -2%;
 }
 .nationwide h2 {
-  margin-top: -250px;
+  /* margin-top: -250px; */
   font-family: Nunito;
-  font-size: 40px;
-  font-weight: 900;
+  font-size: 60px;
+  font-weight: 800;
   line-height: 81.84px;
   color: #26403e;
   text-align: center;
-  z-index: 3;
+  margin-top: 80px !important;
 }
 .nationwide p {
   color: #26403e;
@@ -266,7 +267,6 @@ header a {
   line-height: 30px;
   letter-spacing: -0.01em;
   text-align: center;
-  z-index: 3;
 }
 .partners {
   display: flex;
@@ -295,7 +295,7 @@ header a {
   margin-bottom: 20px;
 }
 .halal {
-  z-index: -10;
+  z-index: 1;
   right: 30px;
   top: -150px;
 }
@@ -318,9 +318,17 @@ footer {
   align-items: center;
   height: 292px;
 }
+.social {
+  margin-top: 6%;
+  /* margin: auto;  
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: center; */
+}
 .social img {
   margin: 0 10px;
-  max-width: 30px;
+  /* max-width: 50px; */
 }
 footer p {
   font-family: Reddit Sans Condensed;
@@ -481,9 +489,8 @@ footer span {
     line-height: 24px;
     letter-spacing: -0.01em;
   }
-  .halal-nuggets{
+  .halal-nuggets {
     margin-top: -32%;
-  
   }
   .halal {
     left: 50%;
@@ -497,14 +504,18 @@ footer span {
   }
 
   .cutting {
-    position: relative;
+    /* position: relative;
     left: 50%;
     transform: translateX(-50%);
     top: -122px;
-    z-index: 3;
+    z-index: 3; */
+    top: -0.5%;
   }
   .cutting img {
-    width: 100%;
+    /* width: 210px !important; 
+    height: 775px !important; */
+    width: 410px !important; 
+    height: 375px !important;
   }
   .nationwide h2 {
     font-family: Nunito;
@@ -512,7 +523,7 @@ footer span {
     font-weight: 800;
     line-height: 57.29px;
     text-align: center;
-    margin-top: -40px;
+    margin-top: 180px !important;
   }
   .nationwide p {
     font-family: Nunito;
@@ -523,6 +534,7 @@ footer span {
     text-align: left;
     margin-top: 24px;
     margin-bottom: 31px;
+    width: 100%;
   }
   .partners {
     flex-direction: column;
@@ -612,6 +624,12 @@ footer span {
     letter-spacing: 0.05em;
     text-align: center;
     margin-top: 84px;
+  }
+  .story {
+    margin-left: 0% !important;
+  }
+  .footer-logo {
+    margin-left: 0% !important;
   }
 
   /* .title {
