@@ -25,7 +25,9 @@ header {
   justify-content: center;
   align-items: center;
 }
-
+.logo{
+  margin-left: 154px;
+}
 .navbar {
   width: 100%;
   display: flex;
@@ -389,6 +391,7 @@ footer span {
   }
   .navbar-container img {
     margin-right: 0px;
+    margin-left: 8%;
     width: 113px;
     height: auto;
   }
