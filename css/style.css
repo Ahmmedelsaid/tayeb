@@ -30,7 +30,6 @@ header {
   height: 111px;
 }
 
-
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -73,7 +72,6 @@ header a {
   padding-left: 50px; /* Adjusts the space between the last nav item and the icons */
 }
 
-
 .hero {
   background: url("../images/mainCover.svg") no-repeat center top;
   /* object-position: bottom !important; */
@@ -100,7 +98,7 @@ header a {
 .product-image {
   width: 60%;
 }
-.farm-img{
+.farm-img {
   margin-right: 64px;
 }
 .farm-text h2 {
@@ -227,7 +225,7 @@ header a {
   font-weight: 300;
   line-height: 30px;
   text-align: left;
-  color: #26403E;
+  color: #26403e;
 }
 .features {
   display: flex;
@@ -362,6 +360,9 @@ footer span {
   margin-top: 48px;
   margin-bottom: -45px;
 }
+.footer-logo{
+  margin-left: 4%;
+}
 @media (min-width: 768px) {
   .space-after-lg {
     display: block;
@@ -373,7 +374,87 @@ footer span {
     display: none;
   }
 }
+@media (min-width: 676px) and (max-width: 768px) {
+  header {
+    display: block;
+    padding-inline: 20px !important;
+    height: auto;
+  }
+  .logo-container {
+    padding-right: 20px;
+  }
+  .navbar-expand-lg {
+    flex-wrap: wrap !important;
+  }
+  .farm-img {
+    margin-left: -70px;
+    margin-right: 180px;
+  }
+  .farm-text h2 {
+    margin-top: 0px;
+    white-space: normal;
+  }
+  .farm-text p {
+    margin-top: -0px;
+  }
+  .farm-text button {
+    width: 256px;
+    height: 48px;
+  }
+  .halal {
+    width: 70%;
+    right: 20px;
+    top: -40px;
+  }
+  .tayeb-way p {
+    margin-left: -80px;
+    width: 500px !important;
+  }
+  .tayeb-way h4 {
+    margin-left: -80px;
+  }
+  .tayeb-difference p {
+    width: 100%;
+    text-align: left;
+  }
+  .tayeb-difference h4 {
+    white-space: normal;
+  }
+  .cutting img {
+    width: 610px !important;
+    height: 375px !important;
+  }
 
+  .partners img {
+    width: 30% !important;
+  }
+
+  .map {
+    display: none !important;
+  }
+  .image-container img {
+    margin: 10px 0;
+    width: calc(33% - 10px);
+    display: none !important;
+  }
+
+  .image-container img:nth-child(3),
+  .image-container img:nth-child(2),
+  .image-container img:nth-child(4) {
+    display: block !important;
+  }
+  footer p {
+    white-space: nowrap;
+  }
+  .social {
+    white-space: nowrap;
+  }
+  .nav-item {
+    margin: 10px 0;
+    width: 100%;
+    text-align: center;
+  }
+}
 @media (max-width: 576px) {
   html,
   body {
@@ -401,7 +482,7 @@ footer span {
     width: 100%;
     text-align: center;
   }
-  .logo-container{
+  .logo-container {
     padding-right: 10px;
   }
   .navbar-container img {
@@ -412,21 +493,17 @@ footer span {
   }
   .navbar-icons {
     display: flex;
-    justify-content: space-around;
     margin-top: 80px;
     margin-bottom: 200px;
+    gap: 30px;
   }
   .navbar-icons img {
     max-width: 30px;
   }
   .hero {
-    background: url("../images/hero-mobile.svg") no-repeat center top;
+    background: url("../images/hero-mobile.svg") center top;
     background-size: cover;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    overlay: 10;
     color: white;
     margin-bottom: 20%;
   }
@@ -533,7 +610,7 @@ footer span {
   .cutting img {
     /* width: 210px !important; 
     height: 775px !important; */
-    width: 410px !important; 
+    width: 410px !important;
     height: 375px !important;
   }
   .nationwide h2 {
@@ -609,12 +686,13 @@ footer span {
     line-height: 27.28px;
   }
   .tayeb-difference p {
+    font-family: Nunito;
     font-size: 16px;
     font-weight: 300;
     line-height: 24px;
-    text-align: center;
-    width: 100%;
-    margin-bottom: 64px;
+    text-align: left;
+    margin: auto;
+    padding-bottom: 64px;
   }
   /* footer .row{
     margin-top: -10px !important;
@@ -661,11 +739,56 @@ footer span {
     white-space: nowrap;
   } */
 }
-@media (min-width : 769px) {
-  .tayeb-difference p{
-    text-align: center;
+@media (min-width: 769px) and (max-width: 1100px) {
+  .tayeb-difference p {
+    width: 100%;
+    text-align: left;
+    white-space: normal;
+    /* padding-left: 10%; */
+  }
+  .tayeb-difference h4 {
+    /* white-space: normal; */
+    width: 100%;
+  }
+  header {
+    padding-inline: 10px !important;
+  }
+  .logo-container {
+    padding-right: 50px;
+  }
+  .navbar-expand-lg {
+    flex-wrap: wrap !important;
+  }
+  .farm-img {
+    margin-left: -60px;
+    margin-right: 100px;
+  }
+  .farm-text h2 {
+    margin-top: 10px;
+  }
+  .farm-text p {
+    margin-top: 0px;
+  }
+  .tayeb-way p {
+    margin-left: -70px;
+    width: 530px !important;
+  }
+  .map {
+    display: none !important;
+  }
+  .image-container img {
+    margin: 10px 0;
+    width: calc(33% - 10px);
+    display: none !important;
+  }
+
+  .image-container img:nth-child(3),
+  .image-container img:nth-child(2),
+  .image-container img:nth-child(4) {
+    display: block !important;
   }
 }
+
 @media (max-width: 768px) {
   .tayeb-container {
     padding: 0 10px;
